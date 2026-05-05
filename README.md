@@ -47,11 +47,11 @@ depois de executar o comando ele vai fazer uma série de combinações de usuari
 
 OBS: 
 
-"-h" Define o endereço IP ou nome do host do alvo.
-"-U" Caminho para um arquivo com uma lista de usuários
-"-P" Caminho para um arquivo com uma lista de senhas
-"-M" Define o protocolo
-"-t" Número de threads (tentativas paralelas simultâneas)
+"-h" Define o endereço IP ou nome do host do alvo,
+"-U" Caminho para um arquivo com uma lista de usuários,
+"-P" Caminho para um arquivo com uma lista de senhas,
+"-M" Define o protocolo,
+"-t" Número de threads (tentativas paralelas simultâneas).
 
 <img width="1271" height="351" alt="Captura de tela 2026-05-05 182201" src="https://github.com/user-attachments/assets/f7e0ba4b-915d-4590-80d5-e013868820bd" />
 
