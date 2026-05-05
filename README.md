@@ -1,5 +1,7 @@
 # Simulando um Ataque Usando Kali Linux e Metasploitable
 
+Essa documentação explicará como executar ataques simulados de força bruta em FTP, automação de tentativas em formulário web (DVWA) e password spraying em SMB com enumeração de usuários.
+
 Antes de começar a auditoria primeiro precisa ser feito a enumeração ou seja a coleta de dados do alvo.
 
 Digite o comando no terminal para verificar se está tendo conexão com o sistema alvo: 
@@ -55,4 +57,11 @@ OBS:
 
 Após conseguir o usuário e senha digite o seguinte comando para fazer o acesso via FTP:
 
-ftp 192
+ftp 192.168.56.101
+
+e digite o usuário e senha obtidos pelo medusa.
+
+<img width="322" height="120" alt="Captura de tela 2026-05-05 182712" src="https://github.com/user-attachments/assets/4c88a4fe-31b1-4f9c-92d3-746c1866cfcd" />
+<img width="312" height="197" alt="Captura de tela 2026-05-05 182745" src="https://github.com/user-attachments/assets/65c9717f-f9ed-4c28-a804-f13b3a23e511" />
+
+Automação de Tentativas em Formulário web (DVWA):
