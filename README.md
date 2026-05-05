@@ -64,6 +64,8 @@ e digite o usuário e senha obtidos pelo medusa.
 <img width="322" height="120" alt="Captura de tela 2026-05-05 182712" src="https://github.com/user-attachments/assets/4c88a4fe-31b1-4f9c-92d3-746c1866cfcd" />
 <img width="312" height="197" alt="Captura de tela 2026-05-05 182745" src="https://github.com/user-attachments/assets/65c9717f-f9ed-4c28-a804-f13b3a23e511" />
 
+
+
 Ataques de Força Bruta em Formulário web (DVWA):
 
 Abra o firefox no kali e digite o ip do metasploitable na barra de endereço:
