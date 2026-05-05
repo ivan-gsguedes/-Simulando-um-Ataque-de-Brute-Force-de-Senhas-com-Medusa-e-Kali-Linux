@@ -1,6 +1,6 @@
 # Simulando um Ataque Usando Kali Linux e Metasploitable
 
-Essa documentação explicará como executar ataques simulados de força bruta em FTP, automação de tentativas em formulário web (DVWA) e password spraying em SMB com enumeração de usuários.
+Essa documentação explicará como executar ataques simulados de força bruta em FTP, automação de tentativas em formulário web (DVWA) e password spraying em SMB com enumeração de usuários. Para isso será utilizado o kali linux que e um sistema com varios programas instalados para fazer os ataques e o metasploitable que e um sistema com varias vulnerabilidades propositais para realizar as invasões.
 
 Antes de começar a auditoria primeiro precisa ser feito a enumeração ou seja a coleta de dados do alvo.
 
