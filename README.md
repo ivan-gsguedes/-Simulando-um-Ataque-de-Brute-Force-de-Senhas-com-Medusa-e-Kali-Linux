@@ -83,7 +83,7 @@ A flag "-m" é usada para passar parâmetros adicionais específicos para o mód
 
 <img width="556" height="162" alt="Captura de tela 2026-05-05 201214" src="https://github.com/user-attachments/assets/98a974cc-83af-4d91-96b1-d703f83e110f" />
 
-depois de executar o caomado ele mostra várias combinações de usuários e senhas que podem ser usadas.
+depois de executar o comando ele mostra várias combinações de usuários e senhas que podem ser usadas.
 
 <img width="1309" height="729" alt="Captura de tela 2026-05-05 201413" src="https://github.com/user-attachments/assets/c5f9b8c6-2d74-4259-b94a-175831b3ecc9" />
 
