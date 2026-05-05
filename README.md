@@ -79,4 +79,17 @@ medusa -h 192.168.56.101 -U user.txt -P pass.txt -M http \
 -m FORM:'username=^USER^&password=^PASS^&Login=Login' \
 -m 'FAIL=Login failed' -t 6
 
+A flag "-m" é usada para passar parâmetros adicionais específicos para o módulo selecionado com o -M
+
+<img width="556" height="162" alt="Captura de tela 2026-05-05 201214" src="https://github.com/user-attachments/assets/98a974cc-83af-4d91-96b1-d703f83e110f" />
+
+depois de executar o caomado ele mostra várias combinações de usuários e senhas que podem ser usadas.
+
+<img width="1309" height="729" alt="Captura de tela 2026-05-05 201413" src="https://github.com/user-attachments/assets/c5f9b8c6-2d74-4259-b94a-175831b3ecc9" />
+
+Após testar algumas das credenciais o acesso será feito
+
+<img width="1483" height="808" alt="Captura de tela 2026-05-05 202644" src="https://github.com/user-attachments/assets/8e7d6499-1d8e-4d3c-831f-45355ceac7de" />
+
+Password Spraying em SMB com Enumeração de Usuários:
 
