@@ -122,9 +122,19 @@ Agora será possivel iniciar o processo de invasão do SMB usando o medusa, para
 
 medusa -h 192.168.56.101 -U smb_users.txt -P senhas_spray.txt -M smbnt -t 2 -T 50
 
+O parâmetro "-t" define o número total de tentativas simultâneas (threads) que o Medusa executará.
+O parâmetro "-T" define o número total de hosts a serem testados simultaneamente
+
 <img width="1361" height="332" alt="Captura de tela 2026-05-05 220705" src="https://github.com/user-attachments/assets/65f8bf99-9c40-4a92-85a9-e7e1f8f09cb9" />
 
+Com as informações obtidas será possivel fazer o acesso utilizando o smbclient para isso digite no terminal:
 
+smbclient -L //192.168.56.101 -U msfadmin
+
+"-L" Diz ao smbclient para listar os recursos compartilhados (pastas, impressoras, etc.) do alvo.
+"-U" Especifica o nome de usuário para a conexão. Se omitido, ele pode tentar uma conexão anônima ou usar o seu usuário atual do sistema.
+
+<img width="823" height="350" alt="Captura de tela 2026-05-05 221509" src="https://github.com/user-attachments/assets/dd572485-f1c4-4a97-966e-b88d93caf86e" />
 
 
 
