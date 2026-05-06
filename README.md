@@ -39,7 +39,7 @@ OBS: Por padrão, o comando echo trata tudo como texto literal. Com a flag "-e",
 
 <img width="559" height="206" alt="Captura de tela 2026-05-05 180341" src="https://github.com/user-attachments/assets/b383b75e-c4e0-467c-b6b6-dbd98509deac" />
 
-Após isso poderemos começar o ataque usando o aplicativo Medusa. 
+Após isso poderemos começar o ataque usando o aplicativo Medusa. Existem vários aplicativos de ataque de força bruta mas para quem está começãndo na área o medusa e o mais conecido. Digite o comando:
 
 medusa-h 192.168.56.101 -U user.txt -P pass.txt -M ftp -t 6
 
